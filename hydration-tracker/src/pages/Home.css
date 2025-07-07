@@ -57,3 +57,71 @@ p {
   transition: width 0.4s ease-in-out;
 }
 
+.drop {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #3498db;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.btns {
+  margin: 20px 0;
+}
+
+.btns button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  margin: 0 12px;
+  border-radius: 50%;
+  border: none;
+  background: #3498db;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btns button:active {
+  transform: scale(0.9);
+}
+
+.goal {
+  background: #e6f4ff;
+  padding: 15px;
+  border-radius: 14px;
+  max-width: 400px;
+  margin: 0 auto 60px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.goal p {
+  margin: 6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.goal button {
+  width: 36px;
+  height: 36px;
+  margin: 8px 6px 0;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #3498db;
+  border: 1px solid #cde7fd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.goal button:active {
+  transform: scale(0.92);
+}
+
+

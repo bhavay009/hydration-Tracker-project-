@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Home.css';
+import React, { useState } from "react";
+import "./Home.css";
 
 const Home = () => {
   const [intake, setIntake] = useState(0);
@@ -23,6 +23,25 @@ const Home = () => {
           <span>0 ml</span>
           <span>{goal} ml</span>
         </div>
+      </div>
+      <div className="drop">💧</div>
+      <h2>{intake} ml</h2>
+      <p>of {goal} ml</p>
+
+      <div className="btns">
+        <button onClick={() => setIntake(Math.max(intake - 250, 0))}>-</button>
+        <button onClick={() => setIntake(Math.min(intake + 250, goal))}>
+          +
+        </button>
+      </div>
+
+      <div className="goal">
+        <p>Daily Goal</p>
+        <p>{goal} ml</p>
+        <button onClick={() => setGoal(goal > 100 ? goal - 100 : 100)}>
+          -
+        </button>
+        <button onClick={() => setGoal(goal + 100)}>+</button>
       </div>
     </div>
   );
