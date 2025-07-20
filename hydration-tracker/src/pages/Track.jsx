@@ -3,8 +3,7 @@ import { WaterContext } from '../Context/WaterContext';
 import './Track.css';
 
 function Track() {
-  const [list, setList] = useState([]);
-  const {intake, setIntake, goal } = useContext(WaterContext);
+  const { intake, setIntake, goal, list, setList } = useContext(WaterContext);
 
   const add = (ml) => {
     const time = new Date().toLocaleTimeString([], {
